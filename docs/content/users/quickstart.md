@@ -267,7 +267,7 @@ For all versions of Drupal 8+ the Composer techniques work. The settings configu
     ddev config --omit-containers=db
     ddev start
     ddev composer create getgrav/grav
-    ddev exec gpm install admin -y
+    ddev exec bin/gpm install admin -y
     ddev launch
     ```
 
@@ -279,22 +279,22 @@ For all versions of Drupal 8+ the Composer techniques work. The settings configu
     ddev config --omit-containers=db
     ddev start
     ddev composer install
-    ddev exec grav install
-    ddev exec gpm install admin -y
+    ddev exec bin/grav install
+    ddev exec bin/gpm install admin -y
     ddev launch
     ```
 
 !!!tip "How to update?"
-    Upgrade Grave core:
+    Upgrade Grav core:
 
     ```bash
-    ddev exec gpm selfupgrade -f
+    ddev exec bin/gpm selfupgrade -f
     ```
 
     Update plugins and themes:
 
     ```bash
-    ddev exec gpm update -f
+    ddev exec bin/gpm update -f
     ```
 
 Visit the [Grav Documentation](https://learn.getgrav.org/17) for more information about Grav in general and visit [Local Development with DDEV](https://learn.getgrav.org/17/webservers-hosting/local-development-with-ddev) for more details about the usage of Grav with DDEV.
